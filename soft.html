@@ -36,25 +36,17 @@
 	</nav>
 </header>
 <main>
-	<section class="container" style="display: flex; flex-direction: row;flex-wrap: wrap;justify-content: space-around;">
-		<div style="width: 240px; margin: 15px; border: 1px solid black;">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed labore vel cum. Labore asperiores, blanditiis quas perspiciatis assumenda esse veniam quam quisquam incidunt eligendi, qui impedit dicta, aspernatur nihil similique!</p>
-			<button style="margin-top: auto; margin-bottom: 5px;">ок</button>
+	<section class="block-goods container">
+		<div class="block-goods-card">
+			<img src="files/window10-home.jpg" alt="" class="goods-card-img">
+			<div class="block-goods-card-title">
+				<h3>Microsoft Windows 10 Домашняя</h3>
+			</div>
+			<div class="block-goods-card-foot">
+				<p class="goods-card-price">1000 <i class="fas fa-ruble-sign"></i></p>
+				<button class="goods-card-button">Подробнее</button>
+			</div>	
 		</div>
-		<div style="width: 240px; margin: 15px; border: 1px solid black;">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed labore vel cum. Labore asperiores, blanditiis quas perspiciatis assumenda esse veniam quam quisquam incidunt eligendi, qui impedit dicta, aspernatur nihil similique! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed labore vel cum. Labore asperiores, blanditiis quas perspiciatis assumenda esse veniam quam quisquam incidunt eligendi, qui impedit dicta, aspernatur nihil similique!</p>
-			<button>ок</button>
-		</div>
-		<div style="width: 240px; margin: 15px; border: 1px solid black;"></div>
-		<div style="width: 240px; margin: 15px; border: 1px solid black;"></div>
-		<div style="width: 240px; height: 240px; margin: 15px; border: 1px solid black;"></div>
-		<div style="width: 240px; height: 240px; margin: 15px; border: 1px solid black;"></div>
-		<div style="width: 240px; height: 240px; margin: 15px; border: 1px solid black;"></div>
-		<div style="width: 240px; height: 240px; margin: 15px; border: 1px solid black;"></div>
-		<div style="width: 240px; height: 240px; margin: 15px; border: 1px solid black;"></div>
-		<div style="width: 240px; height: 240px; margin: 15px; border: 1px solid black;"></div>
-		<div style="width: 240px; height: 240px; margin: 15px; border: 1px solid black;"></div>
-		<div style="width: 240px; height: 240px; margin: 15px; border: 1px solid black;"></div>
 	</section>
 </main>
 <footer>
@@ -72,5 +64,9 @@
 		</div>
 	</div>
 </footer>
+<script src="js/auto-height.js"></script>
+<script type="text/javascript">
+	GreatBalancer(".block-goods-card",".block-goods-card-title",".block-goods-card-foot");
+</script>
 </body>
 </html>
