@@ -218,6 +218,18 @@ body {
 	background-color: #33439F;
 	color: white;
 }
+.descript-vacancy {
+	text-align: center;
+	font-family: 'Play', sans-serif;
+	line-height: 24px;
+	padding-top: 20px;
+}
+.spisok-vacancy {
+	text-align: center;
+}
+.spisok-vacancy-h3 {
+	font-family: 'Ubuntu', sans-serif;
+}
 
 /*==============[Медиа запросы]================== */
 @media screen and (max-width: 420px) {
