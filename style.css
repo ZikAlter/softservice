@@ -230,8 +230,175 @@ body {
 .spisok-vacancy-h3 {
 	font-family: 'Ubuntu', sans-serif;
 }
+.descript-vacancy-img {
+	width: 60%;
+}
+.contact-office {
+	display: flex; 
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;	
+}
+.contact-office-block {
+	width: 550px;
+	margin: 20px;
+	background-color: white;
+	box-shadow: 0 0 50px 0 rgba(0, 0, 0, .25);
+}
+.contact-txt-inform {
+	box-sizing: border-box;
+	padding: 20px;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 24px;
+}
+.contact-txt-inform-address::before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f3c5";
+	display: inline-block;
+	padding-right: 10px;
+	vertical-align: middle;
+	font-weight: 900;
+	font-size: 25px;
+	color: #D03325;
+	text-shadow: 0 0 10px #D03325;
+}
+.contact-txt-inform-phone::before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f2a0";
+	display: inline-block;
+	padding-right: 10px;
+	vertical-align: middle;
+	font-weight: 900;
+	font-size: 25px;
+	color: #44AA44;
+	text-shadow: 0 0 10px #44AA44;
+}
+.contact-txt-inform-mail::before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f0e0";
+	display: inline-block;
+	padding-right: 10px;
+	vertical-align: middle;
+	font-weight: 900;
+	font-size: 25px;
+	color: #7D5AED;
+	text-shadow: 0 0 10px #7D5AED;
+}
+.contact-txt-inform-clock::before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f017";
+	display: inline-block;
+	padding-right: 10px;
+	vertical-align: middle;
+	font-weight: 900;
+	font-size: 25px;
+	color: #339AF0;
+	text-shadow: 0 0 10px #339AF0;
+}
+.block-refference {
+	display: flex; 
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.block-refference-elem {
+	width: 540px;
+	margin: 20px;
+}
+.form-report {
+	background-color: #fff;
+	border: 2px solid #DADADA;
+	border-top-left-radius: 120px;
+	border-bottom-right-radius: 120px;
+	padding-left: 80px;
+	box-sizing: border-box;
+}
+.form-report-h3 {
+	font-family: 'Ubuntu', sans-serif;
+}
+.form-report-item {
+	font-family: 'Montserrat', sans-serif;
+}
+.form-report-input {
+	padding: 8px;
+	border: 2px solid black;
+	outline: none;
+	font-family: 'Montserrat', sans-serif;
+}
+.btn-mail { 
+	padding: 15px;
+	background-color: #33439F;
+	color: #fff;
+	border: none;
+	font-family: 'Ubuntu', sans-serif;
+	outline: none;
+	cursor: pointer;
+}
+.btn-mail:hover {
+	box-shadow: 0 0 10px #33439F; 
+}
+.btn-clear {
+	padding: 15px;
+	background-color: #33439F;
+	color: #fff;
+	border: none;
+	font-family: 'Ubuntu', sans-serif;
+	outline: none;
+	cursor: pointer;
+	margin-left: 15px;
+}
+.btn-clear:hover {
+	box-shadow: 0 0 10px #33439F; 
+}
+.block-softprogramm-h2 {
+	font-family: 'Exo 2', 'Arial', sans-serif;
+}
+.block-softprogramm-card {
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap; 
+	justify-content: space-around;
+}
+.block-softprogramm-card-left {
+	width: 250px; 
+	margin: 20px;
+}
+.card-left-img {
+	width: 250px; 
+	height: 300px;
+}
+.block-softprogramm-card-right {
+	width: 700px; 
+	margin: 20px; 
+	font-family: 'Play', sans-serif;
+}
+.card-right-h2 {
+	font-family: 'Exo 2', 'Arial', sans-serif;
+	color: #ED1C24;
+}
+.col-mvideo {
+	color: #ED1C24;
+}
+.bord-dotted {
+	border-bottom: 2px dotted #33439F;
+}
+.block-descript-programm {
+	font-family: 'Play', sans-serif; 
+	line-height: 24px;
+}
 
 /*==============[Медиа запросы]================== */
+@media screen and (max-width: 820px) {
+	.descript-vacancy-img {
+		width: 100%;
+	}
+	.block-softprogramm-card-right {
+		text-align: center;
+		background-color: #fff;
+		box-shadow: 0 0 50px 0 rgba(0, 0, 0, .25);
+	}
+
+}
 @media screen and (max-width: 420px) {
 	.logo-info-h1 {
 		font-size: 25px;
@@ -260,5 +427,20 @@ body {
 	.block-news-img {
 		width: 70%;
 		border-radius: 10px; 
+	}
+	.form-report {
+		border-radius: 5px;
+		padding-left: 10px;
+	}
+	.block-softprogramm-card-right {
+		line-height: 23px;
+	}
+	.block-softprogramm-h2 {
+		text-align: center;
+		line-height: 30px;
+	}
+	.block-descript-programm {
+		padding-left: 2px;
+		padding-right: 2px;
 	}
 }

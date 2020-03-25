@@ -12,7 +12,9 @@
   	<!-- Иконка сайта -->
   	<link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
 	<!-- исправление стилей в некоторых браузерах -->
-	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- css анимация для работы wow JS -->
+	<link rel="stylesheet" href="css/animate.css">
 	<!-- css файл -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- библиотека jQuery для работы плагинов и функционала на стороне клиента -->
@@ -31,18 +33,18 @@
 			<li class="nav-menu-cont-item"><a href="news.html">Новости</a></li>
 			<li class="nav-menu-cont-item"><a href="soft.php">Софт и ПО</a></li>
 			<li class="nav-menu-cont-item"><a href="vacancy.html" class="active">Вакансии</a></li>
-			<li class="nav-menu-cont-item"><a href="#">Контакты</a></li>
+			<li class="nav-menu-cont-item"><a href="contact.html">Контакты</a></li>
 		</ul>
 	</nav>
 </header>
 <main>
-	<section class="container descript-vacancy">
-		<img src="img/good-vacancy.png" alt="">
+	<section class="container descript-vacancy wow fadeInUp" data-wow-duration="2s">
+		<img src="img/good-vacancy.png" alt="" class="descript-vacancy-img">
 		<p>Успех фирмы напрямую зависит от работающих в ней людей. Мы уверены, что сотрудники нашего предприятия профессионалы своего дела, готовые развиваться, искать нестандартные идеи, чувствовать темп фирмы и двигать ее вперед. </p>
 
 		<p>Мы ищем ответственных, инициативных, отзывчивых и готовых показывать результат людей. Именно они получают возможность двигаться вперед по карьерной лестнице и достигать новых высот.</p>
 	</section>
-	<section class="container spisok-vacancy">
+	<section class="container spisok-vacancy wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s">
 		<i class="far fa-frown fa-5x" style="color: #FF8F32;"></i>
 		<h3 class="spisok-vacancy-h3">Извините! В настоящее время, открытых вакансии нет. Но не растраивайтесь, возможно вам повезет в дальнейшем.</h3>
 	</section>
@@ -55,12 +57,16 @@
 		</div>
 		<div class="menu-social">
 			<ul class="menu-social-cont">
-				<li class="menu-social-cont-item"><a href="https://vk.com/"><i class="fab fa-vk fa-2x col-vk"></i></a></li>
-				<li class="menu-social-cont-item"><a href="https://ok.ru/"><i class="fab fa-odnoklassniki fa-2x col-ok"></i></a></li>
-				<li class="menu-social-cont-item"><a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x col-instagram"></i></a></li>
+				<li class="menu-social-cont-item"><a href="https://vk.com/" target="_blank" title="VK группа"><i class="fab fa-vk fa-2x col-vk"></i></a></li>
+				<li class="menu-social-cont-item"><a href="https://ok.ru/" target="_blank" title="OK группа"><i class="fab fa-odnoklassniki fa-2x col-ok"></i></a></li>
+				<li class="menu-social-cont-item"><a href="https://www.instagram.com/" target="_blank" title="Instagram профиль"><i class="fab fa-instagram fa-2x col-instagram"></i></a></li>
 			</ul>
 		</div>
 	</div>
 </footer>
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 </body>
 </html>

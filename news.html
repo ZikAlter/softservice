@@ -12,7 +12,9 @@
   	<!-- Иконка сайта -->
   	<link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
 	<!-- исправление стилей в некоторых браузерах -->
-	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- css анимация для работы wow JS -->
+	<link rel="stylesheet" href="css/animate.css">
 	<!-- css файл -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- библиотека jQuery для работы плагинов и функционала на стороне клиента -->
@@ -31,34 +33,34 @@
 			<li class="nav-menu-cont-item"><a href="news.html" class="active">Новости</a></li>
 			<li class="nav-menu-cont-item"><a href="soft.php">Софт и ПО</a></li>
 			<li class="nav-menu-cont-item"><a href="vacancy.html">Вакансии</a></li>
-			<li class="nav-menu-cont-item"><a href="#">Контакты</a></li>
+			<li class="nav-menu-cont-item"><a href="contact.html">Контакты</a></li>
 		</ul>
 	</nav>
 </header>
 <main>
 	<section class="news-content container">
-		<article class="block-news">
+		<article class="block-news wow fadeIn" data-wow-duration="2s">
 			<img src="img/background-header.jpg" class="block-news-img">
 			<h2 class="block-news-h2">Новость</h2>
 			<p class="block-news-txt">Обновлён прайс на комплектующие</p>
 			<time class="block-news-time"><b>03.10.2005 г.</b></time>
 			<hr>
 		</article>
-		<article class="block-news">
+		<article class="block-news wow fadeIn" data-wow-duration="2s">
 			<img src="img/background-header.jpg" class="block-news-img">
 			<h2 class="block-news-h2">Новость</h2>
 			<p class="block-news-txt">Обновлён прайс на комплектующие</p>
 			<time class="block-news-time"><b>31.08.2005 г.</b></time>
 			<hr>
 		</article>
-		<article class="block-news">
+		<article class="block-news wow fadeIn" data-wow-duration="2s">
 			<img src="img/background-header.jpg" class="block-news-img">
 			<h2 class="block-news-h2">Новость</h2>
 			<p class="block-news-txt">Обновлён прайс на комплектующие</p>
 			<time class="block-news-time"><b>21.08.2005 г.</b></time>
 			<hr>
 		</article>
-		<article class="block-news">
+		<article class="block-news wow fadeIn" data-wow-duration="2s">
 			<img src="img/background-header.jpg" class="block-news-img">
 			<h2 class="block-news-h2">Новость</h2>
 			<p class="block-news-txt">У сайта обновлён дизаин. Замечания и предложения по дизайнe сайта высылайте на адрес: nikava@narod.ru с пометкой "Для Софт-Сервис"</p>
@@ -75,12 +77,16 @@
 		</div>
 		<div class="menu-social">
 			<ul class="menu-social-cont">
-				<li class="menu-social-cont-item"><a href="https://vk.com/"><i class="fab fa-vk fa-2x col-vk"></i></a></li>
-				<li class="menu-social-cont-item"><a href="https://ok.ru/"><i class="fab fa-odnoklassniki fa-2x col-ok"></i></a></li>
-				<li class="menu-social-cont-item"><a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x col-instagram"></i></a></li>
+				<li class="menu-social-cont-item"><a href="https://vk.com/" target="_blank" title="VK группа"><i class="fab fa-vk fa-2x col-vk"></i></a></li>
+				<li class="menu-social-cont-item"><a href="https://ok.ru/" target="_blank" title="OK группа"><i class="fab fa-odnoklassniki fa-2x col-ok"></i></a></li>
+				<li class="menu-social-cont-item"><a href="https://www.instagram.com/" target="_blank" title="Instagram профиль"><i class="fab fa-instagram fa-2x col-instagram"></i></a></li>
 			</ul>
 		</div>
 	</div>
 </footer>
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 </body>
 </html>
